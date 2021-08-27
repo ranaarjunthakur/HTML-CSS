@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>html form</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body {
+    /* margin:50px 0px; padding:0px; */
+    /* text-align:center; */
+    align:center;
+    background:linear-gradient(to top, pink,skyblue);
+    background-size:cover;
+    background-position: center;
+}
+    .form{
+        position:center;
+        width:100vw;
+        height:100vh;
+      }
+    .form h1{
+        color:pink;
+        text-align:center;
+        font-size:50px;
+        margin:40px;
+    }
+    .formname{
+        width:40%; 
+        padding: 7px;
+        border-radius: 10px;
+        font-size:15px;
+        font-family:sans-serif;
+        font-style:italic;
+       
+    }
+    .form .info{
+        background-color: rgba(0,0,0,0.5);
+        width:100%;
+        font-size:18px;
+        border-radius:10px;
+        border:1px solid rgba(255,255,255,0.3);
+        box-shadow:2px 2px 15px rgba(0,0,0,0.3);
+        color:pink;
+    }
+</style>
+<body>
+    <div class="form">
+    <div style="width: 500px;margin: 7% auto;">
+        <h1>PERSONAL INFORMATION</h1>
+        <form action="/action_page.php" method="POST" target="_blank" class="info">
+             Google Search:<input type="search" id="gsearch" name="gsearch">
+                           <input type="submit" value="search"><br><br>
+            First Name:<input type="text" id="fname" class="formname" name="fname"      placeholder="enter your first name" value="" required><br><br>
+              Last Name:<input type="text" id="lname" class="formname"   name="lname" placeholder="enter your last name" value="" readonly><br><br>
+             Email:<input type="email"  placeholder="enter email" name="useremail" class="formname"><br><br>
+             Password:<input type="password" name="userpassword" class="formname"><br><br>
+             D.O.B:<input type="datetime-local" name="dob" class="formname"><br><br>
+             Gender:<input type="radio" id="male"  name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+             Eligiblity:<input type="checkbox" id="10th" value="high school">
+                        <label for="high school">High School</label> 
+                        <input type="checkbox" id="12th" value="intermediate">
+                        <label for="inter">Intermediate</label>
+                        <input type="checkbox" id="eligiblity" value="UG">
+                        <label for="UG">Graduation</label>
+                        <input type="checkbox" id="PG" value="PG">
+                        <label for="PG">Post Graduate</label><br><br>
+                        <label for="stream">Choose a stream:</label>
+                        <select id="stream" name="stream" class="formname">
+                        <option value="math">Mathematics</option>
+                        <option value="sci">Science</option>
+                        <option value="acc">Account</option>
+                        <option value="art">Art</option>
+                        </select><br><br>
+                        <label for="university">Universities:</label>
+                        <select id="university" name="university" class="formname">
+                        <option value="1">delhi university</option>
+                        <option value="2">CCSU university</option>
+                        <option value="3">AKTU university</option>
+                        <option value="4">UTTRANCHAL university</option>
+                        </select><br><br>
+        about yourself: <textarea name="message" row="10" cols="30" class="formname">about yourself</textarea><br><br>
+         opportunities:  <input list="opportunities" name="opportunities" class="formname"> 
+                         <datalist id="opportunities">
+                            <option value="software developer">
+                                <option value="data scientist">
+                                <option value="cloud architect">
+                                <option value="web designer">
+                                <option value="data entry">
+                         </datalist><br><br>
+                         <label for="favcol">choose your fav color:</label> 
+                         <input type="color" id="favcol" value="#ff7200"><br><br>
+                         <label for="myfile">Select a file</label>
+                         <input type="file" id="myfile" class="formname"><br><br>
+                telephone:<input type="tel" id="phone"  placeholder="enter your phone no." name="phone" class="formname"> 
+                <button type="submit" >Save</button> 
+        </form>    
+    </div>
+    </div>
+</body>
+</html>
