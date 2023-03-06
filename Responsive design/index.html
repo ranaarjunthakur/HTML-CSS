@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Designing</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="style.css" media="print"> -->
+        <link rel="stylesheet" href="viewport.css">
+         <!-- <link rel="stylesheet" href="breakpoint.css"> -->
+        <!-- <link rel="stylesheet" href="landscape.css" media="all and (orientation: landscape)">
+        <link rel="stylesheet" href="portrait.css" media="all and (orientation: portrait)"> -->
+    </head>
+    <body>
+
+         <!-- //TODO: MEDIA QUERY FOR  ALL DEVICES & MEDIA QUERY FOR  PRINT -->
+
+        <section class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Liquid layout</h1>
+                            <article>
+                            <p>Instead of using fixed widths for your layouts you could make a flexible layout using percentages for your column widths. This will work in more situations than a fixed-width layout that only looks right at one specific size. These were called liquid layouts.</p>
+                            <p>But while a liquid layout will look good across a wide range of widths, it will begin to worsen at the extremes. On a wide screen the layout will look like it’s been stretched out too far. On a narrow screen the layout will look like it’s been squashed. Both scenarios feel uncomfortable.</p>
+                            <p>You can mitigate these problems by using <code>min-width</code> and <code>max-width</code> for your layout. But then at any sizes below the minimum width or above the maximum width, you’ve got the same issues you’d have with a fixed-width layout. On a wide screen there’d be unused space going to waste. On a narrow screen, the user would have to move the whole page left and right in order to see everything.</p> 
+                            </article>
+                            <aside>
+                            <p>The word “liquid” is just one of the terms used to describe this kind of layout. These kinds of designs were also called fluid layouts or flexible layouts. The terminology was as fluid as the technique.</p>
+                            <p>This example is using the CSS <code>float</code> property to create columns. That was a popular technique before CSS grid or flexbox existed.</p>
+                            </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         
+        <!-- //TODO: styles based on viewport size -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h1>Combining media queries</h1>
+                        <p>You can use lots of different CSS units in your media queries. If your content is mostly image-based, pixels might make the most sense. If your content is mostly text-based, it probably makes more sense to use a unit that’s based on text size, like `rem` or `em`</p>
+                        <p>You can also combine media queries to apply more than one condition. Use the word `and` to combine your media queries.</p>
+                        <p>In this example, the background color will change but only when the viewport width is between <code>50em</code> and <code>60em</code>.</p>
+                </div>
+            </div>
+        </section>
+
+<!-- //TODO: Choose breakpoints based on the content -->
+
+        <section>
+            <header>
+                <h1>Sketch of
+                The Analytical Engine
+                Invented by Charles Babbage </h1>
+                <h2>With notes upon the Memoir by the Translator Ada Augusta, Countess of Lovelace</h2>
+                </header>
+                <article>
+                <h3>Note C</h3>
+                <p> Those who may desire to study the principles of the Jacquard-loom in the most effectual manner, viz. that of practical observation, have only to step into the Adelaide Gallery or the Polytechnic Institution. In each of these valuable repositories of scientific illustration, a weaver is constantly working at a Jacquard-loom, and is ready to give any information that may be desired as to the construction and modes of acting of his apparatus. The volume on the manufacture of silk, in Lardner's Cyclopædia, contains a chapter on the Jacquard-loom, which may also be consulted with advantage.</p>
+                <p>The mode of application of the cards, as hitherto used in the art of weaving, was not found, however, to be sufficiently powerful for all the simplifications which it was desirable to attain in such varied and complicated processes as those required in order to fulfil the purposes of an Analytical Engine. A method was devised of what was technically designated backing the cards in certain groups according to certain laws. The object of this extension is to secure the possibility of bringing any particular card or set of cards into use any number of times successively in the solution of one problem. Whether this power shall be taken advantage of or not, in each particular instance, will depend on the nature of the operations which the problem under consideration may require. The process is alluded to by M. Menabrea, and it is a very important simplification. It has been proposed to use it for the reciprocal benefit of that art, which, while it has itself no apparent connexion with the domains of abstract science, has yet proved so valuable to the latter, in suggesting the principles which, in their new and singular field of application, seem likely to place algebraical combinations not less completely within the province of mechanism, than are all those varied intricacies of which intersecting threads are susceptible. By the introduction of the system of backing into the Jacquard-loom itself, patterns which should possess symmetry, and follow regular laws of any extent, might be woven by means of comparatively few cards.</p>
+                <p>Those who understand the mechanism of this loom will perceive that the above improvement is easily effected in practice, by causing the prism over which the train of pattern-cards is suspended to revolve backwards instead of forwards, at pleasure, under the requisite circumstances; until, by so doing, any particular card, or set of cards, that has done duty once, and passed on in the ordinary regular succession, is brought back to the position it occupied just before it was used the preceding time. The prism then resumes its forward rotation, and thus brings the card or set of cards in question into play a second time. This process may obviously be repeated any number of times. </p>
+                </article>
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

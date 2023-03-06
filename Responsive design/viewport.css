@@ -1,0 +1,22 @@
+ /* //TODO: styles based on viewport size */
+
+ @media (min-width:400px){
+    /* Styles for viewports wider than 400 pixels. */
+
+  }
+
+  @media (max-width:25em){
+    /* Styles for viewports narrower than 400 pixels. */
+  }
+
+  @media (min-width:50em) and (max-width:60em){
+    /* Styles for viewports wider than 50em and narrower than 60em. */
+    body{
+        background-color: burlywood;
+        color: #fff;
+    }
+  }
+
+  code {
+    color: #000;
+  }

@@ -1,0 +1,11 @@
+@media (min-width: 50em) {
+    article {
+      column-count: 3;
+    }
+  }
+
+  /* @media (min-width: 50em) and (min-height: 60em) {
+    article {
+      column-count: 2;
+    }
+  } */

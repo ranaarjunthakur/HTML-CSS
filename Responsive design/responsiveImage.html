@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Images</title>
+        <style>
+          img{
+            max-inline-size: 100%;
+            block-size: auto;
+            aspect-ratio: 2/1;
+            /* object-fit: contain; */
+            /* object-fit: cover; */
+            object-position: top center;
+
+          }
+       </style>
+    </head>
+
+    <body>
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8mt_4P6wtRK6TVax8x98DX7WCsKczvkWgFur8Utsptu7ukUT8Y2RTxqLBFqYu-aAAtg&usqp=CAU"
+            alt="Cinque Terre" width="300"
+            height="200"
+            loading="lazy">
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8mt_4P6wtRK6TVax8x98DX7WCsKczvkWgFur8Utsptu7ukUT8Y2RTxqLBFqYu-aAAtg&usqp=CAU"
+            alt="A description of the image."
+            width="300"
+            height="200"
+            loading="lazy"
+            decoding="async"
+            srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8mt_4P6wtRK6TVax8x98DX7WCsKczvkWgFur8Utsptu7ukUT8Y2RTxqLBFqYu-aAAtg&usqp=CAU"
+            300w,
+            medium-image.png 600w,
+            large-image.png 1200w"
+            sizes="(min-width: 66em) 33vw,
+            (min-width: 44em) 50vw,
+            100vw">
+
+    </body>
+</html>

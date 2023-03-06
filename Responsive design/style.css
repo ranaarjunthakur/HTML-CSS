@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    padding: 0 16px;
+    background-color: grey;
+    color: #fff;
+  }
+
+   /* //TODO: MEDIA QUERY FOR  PRINT */
+
+  @media print{
+    body{
+        background-color: yellow;
+    }
+  }
+
+  /* //TODO: MEDIA QUERY FOR  ALL DEVICES */
+
+  @media all{
+    body{
+        color: black;
+        background-color: white;
+    }
+  }
+
+
+
+  article{
+    width:66%;
+    float:left;
+  }
+
+  aside{
+    width:33%;
+    float:right;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+  }
