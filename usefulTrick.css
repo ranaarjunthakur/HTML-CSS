@@ -1,0 +1,56 @@
+//////////////////1. -webkit-text-stroke /////////////////////////
+
+.custom-headline {
+  color: transparent;
+  -webkit-text-stroke: 1px #04D939;
+}
+
+//////////////////2. -webkit-line-clamp /////////////////////////
+
+.custom-button {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+////////////////// 3. fixed table head /////////////////////////
+
+.custom-table {
+  thead tr {
+    position: sticky;
+    top: 0;
+  }
+}
+
+////////////////// 4. place-items /////////////////////////
+
+.custom-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center center;
+}
+
+////////////////// 5. :placeholder-shown /////////////////////////
+
+input:placeholder-shown {
+  border-bottom: 2px solid #04D939;
+}
+
+//////////////////6. @media (hover: hover) and (pointer: fine) /////////////////////////
+  
+    @media (hover: hover) and (pointer: fine) {
+    arrow:hover {
+      cursor: pointer;
+      color: #027333;
+      transform: translateX(0.5rem);
+    }
+  }
+
+  
+//////////////////7. column-count /////////////////////////
+  
+  .wrapper {
+  column-count: 2;
+}
