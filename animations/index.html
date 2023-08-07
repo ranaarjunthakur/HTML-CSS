@@ -1,47 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <h3>Lorem ipsum dolor </h3>
+<html>
+  <head>
+    <title>Animations</title>
+  </head>
+  <style>
+    body{
+      position:relative;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      overflow: hidden;
+      background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+      }
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            deserunt!</p>
-        <ul>
-            <li class="firstList">pooja</li>
-            <li id="sList">rani</li>
-            <li>arjun</li>
-            <li>thakur</li>
-        </ul>
 
-        <div>
-            <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Consequuntur, doloremque.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+      h1{
+      width: 100%;
+      transform: translateX(100%); 
+      position:absolute;
+      color:transparent;
+      -webkit-text-stroke: 2px #fff;
+      z-index:9;
+      font-size:10vh;
+      letter-spacing:2px;
+      animation:movingText 4s linear  infinite ;
+      }
+      
+      .bounce{
+      position:absolute;
+      height:200px;
+      width:200px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+      border-radius:50%;
+      transform: scale(1);
+      transition:all .3s ease;
+      animation:pulse 2s linear 2s infinite alternate;
+      }
 
-        <pre><code>5+7=12<br>6*5=30</code></pre>
 
-        <div class="mainDiv"></div>
+    //////////////////////////////////////Moving Text Animation/////////////////////
+      
+      
+      @keyframes movingText{
+      
+      0%{
+      transform: translate(100,0)
+      }
+      100%{
+      transform: translate(-100%,0)
+      }
+      
+      }
 
-        <span id="box"></span>
-        <ul class="unorder">
-        </ul>
+    /////////////////////////////////////////bounce Animation///////////////////////////
+      
+      @keyframes bounce{
+      
+      from {
+          top: 0%;
+          background-color:green;
+        }
+        to {
+          top: 60%;
+        }
+      
+      }
 
-        <!-- <button type="button">Click</button> -->
+    ////////////////pulse Animation//////////////////////
+      
+      
+      @keyframes pulse{
+      0%{
+      transform:scale(1);
+      }
+      70%{
+      transform:scale(1.2);
+      }
+      100%{
+      transform:scale(1);
+      }
+      }
 
-        <button type="button" class="btns">click me</button>
-
-        <!-- Login form -->
-
-        <div class="formDiv">
-
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+    //////////////////////////////////faceIn FadeOut Animation/////////////////////////////
+      
+      @keyframes FadeIn{
+        0%{
+        opacity:1;
+        transform:rotate(360deg)
+        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        25%{
+        opacity:.8;
+        transform:rotate(270deg);
+        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+       
+        }
+        50%{
+        opacity:.6;
+        transform:rotate(180deg);
+        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        
+        }
+        75%{
+        opacity:.4;
+        transform:rotate(90deg);
+        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        
+        }
+        100%{
+        opacity:.2;
+        transform:rotate(45deg);
+        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        
+        }
+}
+  </style>
+  <body>
+    <h1>Never Give Up!!</h1>
+    <div class='bounce'></div>
+  </body>
 </html>
